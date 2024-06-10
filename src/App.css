@@ -197,7 +197,7 @@ top: 100%;
 }
 /* .cub-1 styles */
 .cub-1 {
-transform: rotateZ(calc(var(--y) * 0.9deg)) rotateX(calc(var(--x) * 0.9deg)) ;
+transform: rotateZ(calc(var(--y) * 0.9deg)) rotateX(calc(var(--x) * 0.9deg)) rotateZ(calc(var(--x) * 0.9deg));
 transition: all .3s cubic-bezier(0,0,0,0) ;
 opacity:1;
 width:4.625em;
