@@ -5,7 +5,7 @@ import img3 from './assets/blackpowerbtn.png';
 import img4 from './assets/black-volume.png';
 import img5 from './assets/227f1c44-b181-4558-a1c9-7952b4382156-removebg-preview.png';
 import img6 from './assets/nothing_frame-removebg-preview.png';
-import './Cube.css'; // Assuming you have a separate CSS file for styles
+// Assuming you have a separate CSS file for styles
 
 const Cube = () => {
   const [state, setState] = useState('0');
@@ -15,8 +15,9 @@ const Cube = () => {
       if (state === '1') {
         let x = e.clientX;
         let y = e.clientY;
-       const dd = cube.style = `--y:${y};` + `--x:${x};`;
-       console.log(dd);
+       const dd = cube.style = `--y:${y};` + `--x:${x};` ;
+      }else{
+        
       }
     };
 
@@ -40,11 +41,12 @@ const Cube = () => {
 
   const showfront = () => {
     setState(state === '1' ? '0' : '1');
+    
   };
 
   return (
     <div id="tridiv">
-      <div className="scene" style={{ transform: 'rotateX(-25deg) rotateY(473deg)' }}>
+      <div className="scene" style={{ transform: 'rotateX(-100deg) rotateY(180deg) rotateZ(180deg)' }}>
         <div className={`shape cuboid-1 cub-1 box state-${state}`} data-state={state}>
           <div className="face ft">
             <div className="photon-shader-ft" style={{ backgroundColor: '#36363A' }}>
